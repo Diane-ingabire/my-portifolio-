@@ -115,12 +115,31 @@ opacity: 1;
         font-size: 24px;
         text-align: center;
     }
-#footer{
-    /* margin-top: 20px; */
-    background-color: black;
-    color: white;
-    padding: 30px;
-    margin-top: auto;
+    .proj-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        row-gap: 45px;
+      
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #100744;
+        color: white;
+        margin-top: 510px;
+    }
     
+    footer p {
+        margin: 5px 0px;
+    }
     
-}
+    footer a {
+        text-decoration: none;
+        color: #49b6fa;
+    }
+    
+    footer a:hover {
+        text-decoration: underline;
+    }
+    

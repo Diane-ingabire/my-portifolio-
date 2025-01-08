@@ -61,14 +61,30 @@ input[type= "button"]{
     color: #FFFFFF;
     background-color:#49B6FA;
 }
-footer{
-    /* margin-top: 20px; */
-    background-color: black;
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #100744;
     color: white;
-    padding: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    height: 200px;
-    
-    
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #49b6fa;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.auto-type-div{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

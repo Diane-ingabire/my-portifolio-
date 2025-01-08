@@ -25,21 +25,33 @@
     </section>
     </div>
 </header><br/>
-    <section id="body">
+    <section id="body" >
 
-      <div>
+      <div class="auto-type-div">
         <h3 style="font-size: 32px; font-weight: bolder;">Hello It's me</h3>
 
         <h2 style="font-size: 48px; font-weight: bolder;">Diane INGABIRE</h2>
         
-         <h3 style="font-size: 32px; font-weight: bolder;">And I'm a Frontend Developer</h3>
-         
-         <div>
+         <h3 style="font-size: 32px; font-weight: bolder;">And I'm a <span style="color: blue;" class="auto-type">Frontend Developer</span></h3>
+         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+         <script>
+          var typed = new Typed('.auto-type',{
+            strings: ['FrontendDeveloper', 'FrontendDeveloper', 'FrontendDeveloper'],
+            typeSpeed: 150,
+            backSpeed: 150,
+            looped: true
+          });
+         </script>
+      
           <div style="margin-right: 50%; display: flex;justify-content: space-between;align-items: center;padding:50px 20px;" id="text" >
              <p style="margin-bottom: 0%; font-size: 20px; font-style: italic;">Aspiring Software Developer|Tech Eunthusiast in progress
                 I'm a software developer <br> student with a passion of coding,
                 problem solving,and creatung impactful digital solutions.
-               currently building a solid foundation programming and software design</p>
+               currently building a solid foundation programming and software design
+               
+              </p>
+
+              
             </div>
           </div>     
              <p style="margin-left: 20px;"> <input type="button" value="   &nbsp;&nbsp; see my CV &nbsp;&nbsp;   "
@@ -48,15 +60,16 @@
                 
       </div>
       
-      <div class="image-container" style="display: flex;flex:1; width: 300px; margin-left: 1000px; height: 400px; position:relative">
-        <img src="image.png" alt="Profile Picture">
-      </div>
-     
+      
+     <div class="image-container" style="display: flex;flex:1; width: 300px; margin-left: 1000px; height: 400px; position:relative">
+                <img src="image.png" alt="Profile Picture">
+              </div>
     
          </section>
-  <footer id="footer">
-    <p style="text-align: center;">Empowering youth through Tech|Software Developer|Long life learner</p>
-<p> Ready to collaborate!Let's <a href="contact.html">get in touch</a></p>
+  
+  <footer>
+      <p>Empowering Youth Through Tech|Software Developer | Lifelong learner.</p>
+      <p>lead to collaborate <a href="contact.html">let's get in touch</a></p>
   </footer>
 </div>
 </body> 
