@@ -1,0 +1,74 @@
+body, html{
+    width: 100%;
+    font-family: sans-serif;
+    background-color: #02021c;
+    color:#FFFFFF;
+    font-family: 'Times New Roman', Times, serif;
+    text-indent: 1%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+nav{                      
+             
+    margin-right: 20px;
+    padding: 10px 15px;
+    
+    
+}
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;  
+
+}
+.nav-menu li {
+    margin-right: 20px;  /* Adds space between each list item */
+}
+.nav-menu a {
+    text-decoration: none;  /* Remove underline from links */
+    color: white;  /* Set link color */
+    padding: 10px 15px;  /* Add some padding around the text */
+}
+.nav-menu a:hover{
+    color: #49b6fa;
+}
+.image-container {
+   
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow:visible; /* Ensures the image stays circular */
+    box-shadow: 0 0 30px 10px rgba(90, 7, 184, 0.3); /* Glowing effect */
+    background: radial-gradient(circle, rgb(245, 246, 247), transparent);
+    display: flex;
+     margin-left: 90%;
+    
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits inside the circle */
+    border-radius: 50%; /* Makes the image circular */
+    
+
+  }
+
+
+input[type= "button"]{
+    color: #FFFFFF;
+    background-color:#49B6FA;
+}
+footer{
+    /* margin-top: 20px; */
+    background-color: black;
+    color: white;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    height: 200px;
+    
+    
+}

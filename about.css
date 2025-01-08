@@ -1,0 +1,78 @@
+body, html{
+    width: 100%;
+    font-family: sans-serif;
+    background: linear-gradient(to bottom, #100744 0%, #49b6fa 50%, #1d1c43 100%);
+    color:#FFFFFF;
+    font-family: 'Times New Roman', Times, serif;
+    text-indent: 1%;
+}
+nav{                      
+             
+    margin-right: 20px;
+    padding: 10px 15px;
+    
+    
+}
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;  
+
+}
+.nav-menu li {
+    margin-right: 20px;  /* Adds space between each list item */
+}
+.nav-menu a {
+    text-decoration: none;  /* Remove underline from links */
+    color: white;  /* Set link color */
+    padding: 10px 15px;  /* Add some padding around the text */
+}
+.nav-menu a:hover{
+    color: #49b6fa;
+}
+.image-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow:visible; /* Ensures the image stays circular */
+    box-shadow: 0 0 30px 10px rgba(90, 7, 184, 0.3); /* Glowing effect */
+    background: radial-gradient(circle, rgb(245, 246, 247), transparent);
+    ;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits inside the circle */
+    border-radius: 50%; /* Makes the image circular */
+     ;
+  }
+  section{
+    display: flex;
+    align-items: center;
+}
+.col1{
+    flex: 0 0 auto; /* Prevent the image from stretching */
+    margin-right: 20px; /* Space between the image and text */
+  }
+.col2{
+    flex: 1; /* Allow the text section to take up remaining space */
+  }
+  img{
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto;
+    margin-right: 300px;
+  }
+
+#footer{
+    /* margin-top: 20px; */
+    background-color: black;
+    color: white;
+    padding: 1%;
+    margin-bottom:0px;
+    margin-right: 0%;
+    
+    
+}

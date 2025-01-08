@@ -1,0 +1,126 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body, html{
+    width: 100%;
+    font-family: sans-serif;
+    background-color: #02021c;
+    color:#FFFFFF;
+    font-family: 'Times New Roman', Times, serif;
+    text-indent: 1%;
+}
+nav{                      
+             
+    margin-right: 20px;
+    padding: 10px 15px;
+    
+    
+}
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;  
+
+}
+.nav-menu li {
+    margin-right: 20px;  /* Adds space between each list item */
+}
+.nav-menu a {
+    text-decoration: none;  /* Remove underline from links */
+    color: white;  /* Set link color */
+    padding: 10px 15px;  /* Add some padding around the text */
+}
+.nav-menu a:hover{
+    color: #49b6fa;
+}
+.wrap1{
+width: 10%;
+height: 5px;
+size-adjust: 4px;
+
+}
+.image1{
+    width: 200px;
+    position:relative;
+}
+img{
+    width: 277px;
+    display:block;
+    margin-left: 5cm;
+    margin-top: 5cm;
+    border-radius: 20px;
+}
+.content{
+    width:277px;
+    height: 204px;
+    margin-left: 5cm;
+
+    top:10px;
+    left:0px;
+    padding: 5%;
+    position:absolute;
+    background: linear-gradient(to bottom, #3cabc6 0%, #737373 60%, #3f3d3d 100%);
+    border-radius: 20px;
+    opacity: 0;
+    transition: 0.6s;
+}
+.content:hover{
+opacity: 1;
+}
+.content h1{
+    font-size: 24px;
+    text-align: center;
+}
+.wrap2{
+    width: 10%;
+    height: 5px;
+    size-adjust: 4px;
+    margin-left: 12cm;
+    margin-top: 0px;
+    position:absolute;
+    }
+    .image2{
+    width: 200px;
+    position:relative;
+    }
+    img{
+        width: 277px;
+        display:block;
+        margin-left: 5cm;
+        margin-top: 5cm;
+        border-radius: 20px;
+    }
+    .content2{
+        width:277px;
+        height: 204px;
+        margin-left: 5cm;
+    
+        top:10px;
+        left:0px;
+        padding: 5%;
+        position:absolute;
+        background: linear-gradient(to bottom, #3cabc6 0%, #737373 60%, #3f3d3d 100%);
+        border-radius: 20px;
+        opacity: 0;
+        transition: 0.6s;
+    }
+    .content2:hover{
+    opacity: 1;
+    }
+    .content2 h1{
+        font-size: 24px;
+        text-align: center;
+    }
+#footer{
+    /* margin-top: 20px; */
+    background-color: black;
+    color: white;
+    padding: 30px;
+    margin-top: auto;
+    
+    
+}
