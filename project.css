@@ -23,9 +23,15 @@ body, html {
     .nav-menu a:hover {
     color : #49b6fa;
     }
+    .proj-container {
+        display : flex;
+        flex-direction : row;
+        justify-content : flex-start;
+        row-gap : 45px; }
     .wrap1 {
     width : 277px;
     height : 5px;
+    margin-left: -1cm;
     }
     .image1 {
     width : 200px;
@@ -59,9 +65,9 @@ body, html {
     text-align : center;
     }
     .wrap2 {
-    width : 10%;
+    width : 277px;
     height : 5px;
-    margin-left : 12cm;
+    margin-left : 10cm;
     margin-top : 0;
     position : absolute;
     }
@@ -96,16 +102,12 @@ body, html {
     font-size : 24px;
     text-align : center;
     }
-    .proj-container {
-    display : flex;
-    flex-direction : row;
-    justify-content : flex-start;
-    row-gap : 45px;
-    }
+  
+
     .wrap3 {
-    width : 10%;
+    width : 277px;
     height : 5px;
-    margin-left : 12cm;
+    margin-left : 21cm;
     margin-top : 0;
     position : absolute;
     }
@@ -120,11 +122,11 @@ body, html {
     margin-top : 5cm;
     border-radius : 20px;
     }
-    .content2 {
+    .content3 {
     width : 260px;
     height : 180px;
     margin-left : 5cm;
-    top : 10px;
+    top: 10px;
     left : 0;
     padding : 5%;
     position : absolute;
@@ -132,20 +134,31 @@ body, html {
     border-radius : 20px;
     opacity : 0;
     transition : 0.6s;
+    margin-top:190px;
     }
-    .content2:hover {
+    .content3:hover {
     opacity : 1;
     }
-    .content2 h1 {
+    .content3 h1 {
     font-size : 24px;
     text-align : center;
     }
-    .proj-container {
-    display : flex;
-    flex-direction : row;
-    justify-content : flex-start;
-    row-gap : 45px;
+
+    button {
+        border-radius: 20px;
+        padding: 10px 20px;
+        background-color: #49B6FA;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
     }
+    button:hover {
+        background-color: #007BFF;
+    }
+    
+
     footer {
     text-align : center;
     padding : 20px;
