@@ -1,57 +1,68 @@
-b<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="about.css"/>
+    <link rel="stylesheet" href="about.css">
 </head>
 <body>
-    <header>
-        <p>portfolio</p>
-        <div style="margin-left: 60%;">
-           <section id="navigationbar">
-            
-            <nav style="position: fixed;">
-                <ul class="nav-menu">
-                  <li><a href="home.html" >Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="project.html">Projects</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-          
-              </nav>
-              
-        </section>
-        </div>
+    <header style="position: fixed; width: 100%; background-color: #02021c transparent; padding: 10px 0;">
+        <p style="font-size: 24px; color: white; margin-left: 20px;">Portfolio</p>
+        <nav style="margin-left: 60%; display: flex; justify-content: end;">
+            <ul class="nav-menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <section>
-        <div class="col1">
-            <h1 style="display: flex; margin-left: 5%;">ABOUT   <span style="color: #49b6fa;"> ME</span></h1>
-            <img src="image.png" alt="img" style="display: flex; margin-left: 20%;"/>
-        </div>
-        <div class="col2">
-         <div style="font-size: larger;">
-            <h3>Mission Statement</h3>
-            <p style="font-style: italic;" >"I aim to use technology to build impactful solutions that empower<br/>    people, solve challenges, and drive positive change in<br/> communities."</p>
-         <h3>Skills and Tools</h3>
-         <ul>
-            <li>Problem-solving and creativity.</li>
-            <li>Working knowledge of programming and design tools:
-               <ul>
-                <li>HTML</li>
-                <li>Javascript</li>
-                <li>Figma</li>
-               </ul>
-            </li>
-            
-         </ul></div>
-        </div>
-    </section>
-    
+    <br/><br/><br/><br/>
+
+    <main>
+        <section class="about-section">
+            <div class="image-container">
+                <img src="image.png" alt="Profile Image">
+            </div>
+            <div class="content-container">
+                <h1>ABOUT <span style="color: #49b6fa;">ME</span></h1>
+                <h3>Mission Statement</h3>
+                <p class="mission">
+                    "I aim to use technology to build impactful solutions that empower
+                    people, solve challenges, and drive positive change in communities."
+                </p>
+                <h3>Skills and Tools</h3>
+                <ul>
+                    <li>Problem-solving and creativity.</li>
+                    <li>Working knowledge of programming and design tools:
+                        <ul>
+                            <li>HTML</li>
+                            <li>JavaScript</li>
+                            <li>Figma</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>Empowering Youth Through Tech|Software Developer | Lifelong learner.</p>
-        <p>lead to collaborate <a href="contact.html">let's get in touch</a></p>
+        <p>Empowering Youth Through Tech | Software Developer | Lifelong Learner</p>
+        <p>Let's collaborate: <a href="contact.html">Get in Touch</a></p>
+        <div class="social-icons">
+            <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp">
+                <img src="whatsapp.png" alt="WhatsApp">
+            </a>
+            <a href="mailto:youremail@example.com" target="_blank" title="Email">
+                <img src="email.png" alt="Email">
+            </a>
+            <a href="https://www.linkedin.com/in/yourprofile/" target="_blank" title="LinkedIn">
+                <img src="Linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://twitter.com/yourhandle" target="_blank" title="Twitter">
+                <img src="twitter.png" alt="Twitter">
+            </a>
+        </div>
     </footer>
 </body>
 </html>

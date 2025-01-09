@@ -2,75 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link  rel="stylesheet" href="index.css" media="all"/>
-    <title>Diane's portifolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css" media="all"/>
+    <title>Diane's Portfolio</title>
 </head>
 <body>
-  <div><header style="position:fixed">
-    <p style="font-size: 24px;">portfolio</p>
-    <div style="margin-left: 60%;">
-       <section id="navigationbar">
-        
-        <nav style="margin-left: 400px; align-items: end;">
-            <ul class="nav-menu">
-              <li><a href="home.html" >Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="project.html">Projects</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-      
-          </nav>
-          
-    </section>
-    </div>
-</header><br/>
-    <section id="body" >
+    <div>
+        <!-- Header Section -->
+        <header style="position: fixed; width: 100%; background-color: #02021c; padding: 10px 0;">
+            <p style="font-size: 24px; color: white; margin-left: 20px;">Portfolio</p>
+            <nav style="margin-left: 60%; display: flex; justify-content: end;">
+                <ul class="nav-menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br/><br/><br/>
 
-      <div class="auto-type-div">
-        <h3 style="font-size: 32px; font-weight: bolder;">Hello It's me</h3>
+        <!-- Main Body Section -->
+        <section id="body">
+            <div class="content-container">
+                <div class="text-container">
+                    <h3>Hello It's me</h3>
+                    <h2>Diane INGABIRE</h2>
+                    <h3>And I'm a <span class="auto-type" style=" color:#49b6fa;">Frontend Developer</span></h3>
+                    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                    <script>
+                        var typed = new Typed('.auto-type', {
+                            strings: ['Frontend Developer', 'Tech Enthusiast', 'Software Developer'],
+                            typeSpeed: 100,
+                            backSpeed: 100,
+                            loop: true
+                        });
+                    </script>
+                    <p class="intro-text">
+                        Aspiring Software Developer | Tech Enthusiast in Progress.<br>
+                        I'm a Software Development student with a passion for coding, problem-solving, and creating impactful digital solutions.<br>
+                        Currently building a solid foundation in programming and software design.
+                    </p>
+                    <a href="Resume-2.pdf" target="_blank" style="text-decoration: none;">
+                        <button class="cv-button">See My CV</button>
+                    </a>
+                </div>
 
-        <h2 style="font-size: 48px; font-weight: bolder;">Diane INGABIRE</h2>
-        
-         <h3 style="font-size: 32px; font-weight: bolder;">And I'm a <span style="color: blue;" class="auto-type">Frontend Developer</span></h3>
-         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-         <script>
-          var typed = new Typed('.auto-type',{
-            strings: ['FrontendDeveloper', 'FrontendDeveloper', 'FrontendDeveloper'],
-            typeSpeed: 150,
-            backSpeed: 150,
-            looped: true
-          });
-         </script>
-      
-          <div style="margin-right: 50%; display: flex;justify-content: space-between;align-items: center;padding:50px 20px;" id="text" >
-             <p style="margin-bottom: 0%; font-size: 20px; font-style: italic;">Aspiring Software Developer|Tech Eunthusiast in progress
-                I'm a software developer <br> student with a passion of coding,
-                problem solving,and creatung impactful digital solutions.
-               currently building a solid foundation programming and software design
-               
-              </p>
-
-              
+                <div class="image-container">
+                    <img src="image.png" alt="Profile Picture">
+                </div>
             </div>
-          </div>     
-             <p style="margin-left: 20px;"> <input type="button" value="   &nbsp;&nbsp; see my CV &nbsp;&nbsp;   "
-                style="border-radius: 20%; padding: 5px; "/> </p>
-        
-                
-      </div>
-      
-      
-     <div class="image-container" style="display: flex;flex:1; width: 300px; margin-left: 1000px; height: 400px; position:relative">
-                <img src="image.png" alt="Profile Picture">
-              </div>
-    
-         </section>
-  
-  <footer>
-      <p>Empowering Youth Through Tech|Software Developer | Lifelong learner.</p>
-      <p>lead to collaborate <a href="contact.html">let's get in touch</a></p>
-  </footer>
-</div>
-</body> 
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>Empowering Youth Through Tech | Software Developer | Lifelong Learner</p>
+            <p>Let's collaborate: <a href="contact.html">Get in Touch</a></p>
+            <div class="social-icons">
+                <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp">
+                    <img src="whatsapp.png" alt="WhatsApp">
+                </a>
+                <a href="mailto:youremail@example.com" target="_blank" title="Email">
+                    <img src="email.png" alt="Email">
+                </a>
+                <a href="https://www.linkedin.com/in/yourprofile/" target="_blank" title="LinkedIn">
+                    <img src="Linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://twitter.com/yourhandle" target="_blank" title="Twitter">
+                    <img src="twitter.png" alt="Twitter">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
 </html>

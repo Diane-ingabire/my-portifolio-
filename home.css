@@ -1,71 +1,100 @@
-body, html{
+/* General Styles */
+body, html {
     width: 100%;
-    font-family: sans-serif;
-    background-color: #02021c;
-    color:#FFFFFF;
     font-family: 'Times New Roman', Times, serif;
-    text-indent: 1%;
-    height: 100%;
-    margin: 0%;
-    padding: 0%;
+    background-color: #02021c;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
 }
-nav{                      
-             
-    margin-right: 20px;
-    padding: 10px 15px;
-    
-    
-}
+
+/* Navigation Menu */
 .nav-menu {
     list-style-type: none;
-    padding: 0;
+    display: flex;
     margin: 0;
-    display: flex;  
-
+    padding: 0;
 }
 .nav-menu li {
-    margin-right: 20px;  /* Adds space between each list item */
+    margin-right: 20px;
 }
 .nav-menu a {
-    text-decoration: none;  /* Remove underline from links */
-    color: white;  /* Set link color */
-    padding: 10px 15px;  /* Add some padding around the text */
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
 }
-.nav-menu a:hover{
+.nav-menu a:hover {
     color: #49b6fa;
 }
+
+/* Content Section */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+    padding: 50px;
+}
+
+.text-container {
+    width: 50%;
+}
+
+.text-container h3 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.text-container h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.intro-text {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.cv-button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #49B6FA;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.cv-button:hover {
+    background-color: #007BFF;
+}
+
+/* Image Styling */
 .image-container {
-   
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
-    overflow:visible; /* Ensures the image stays circular */
-    box-shadow: 0 0 30px 10px rgba(90, 7, 184, 0.3); /* Glowing effect */
+    overflow: hidden;
+    box-shadow: 0 0 30px 10px rgba(90, 7, 184, 0.3);
     background: radial-gradient(circle, rgb(245, 246, 247), transparent);
     display: flex;
-     margin-left: 90%;
-    
-  }
-  
-  .image-container img {
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image fits inside the circle */
-    border-radius: 50%; /* Makes the image circular */
-    
-
-  }
-
-
-input[type= "button"]{
-    color: #FFFFFF;
-    background-color:#49B6FA;
+    object-fit: cover;
+    border-radius: 50%;
 }
+
+/* Footer Section */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #100744;
-    color: white;
+    background-color: #09022d;
     margin-top: 50px;
 }
 
@@ -81,10 +110,24 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-.auto-type-div{
-    width: 100%;
-    height: 100vh;
+
+/* Social Media Icons */
+.social-icons {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
 }
