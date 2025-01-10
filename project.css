@@ -1,3 +1,4 @@
+@media (max-width: 768px) {
 body, html {
     width : 100%;
     font-family : sans-serif;
@@ -176,4 +177,4 @@ body, html {
     }
     footer a:hover {
     text-decoration : underline;
-    }
+    }}
