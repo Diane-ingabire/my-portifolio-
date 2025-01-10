@@ -1,113 +1,144 @@
 /* General Styles */
 body, html {
     width: 100%;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', sans-serif;
     background-color: #02021c;
     color: #FFFFFF;
     margin: 0;
     padding: 0;
 }
 
-/* Navigation Menu */
+/* Header Section */
+header {
+    width: 100%;
+    background-color: #02021c;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.portfolio-title {
+    font-size: 2%;
+    color: #FFFFFF;
+    margin-left: 2%;
+}
+
 .nav-menu {
     list-style-type: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
+
 .nav-menu li {
-    margin-right: 20px;
+    margin-right: 5%;
 }
+
 .nav-menu a {
     text-decoration: none;
-    color: white;
-    font-size: 16px; /* Increased font size */
-    padding: 10px 15px;
+    color: #ffffff;
+    font-size: 1.8%;
+    font-weight: bold;
+    padding: 1%;
 }
+
 .nav-menu a:hover {
     color: #49b6fa;
 }
 
-/* Content Section */
+/* Body Section */
+.body {
+    margin-top: 10%; /* Space to offset fixed header */
+    padding: 5%;
+    width: 100%;
+}
+
 .content-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    margin: 50px auto;
-    padding: 20px; /* Adjusted padding for better layout */
+    width: 100%;
 }
 
 .text-container {
-    width: 100%;
-    text-align: center;
+    width: 60%;
+    text-align: left;
 }
 
 .text-container h3 {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 2.5%;
+    margin: 0;
 }
 
 .text-container h2 {
-    font-size: 36px;
-    font-weight: bold;
+    font-size: 3%;
+    margin: 1% 0;
 }
 
 .intro-text {
-    font-size: 18px;
-    font-style: italic;
-    margin-top: 20px;
+    font-size: 1.8%;
+    margin: 2% 0;
+    line-height: 1.5;
 }
 
 .cv-button {
-    border-radius: 20px;
-    padding: 10px 20px;
+    border-radius: 5%;
+    padding: 1% 3%;
     background-color: #49B6FA;
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px;
+    font-size: 1.5%;
+    margin-top: 2%;
 }
+
 .cv-button:hover {
     background-color: #007BFF;
 }
 
-/* Image Styling */
+/* Image Section */
 .image-container {
-    width: 300px;
-    height: auto; /* Allow height to adjust automatically */
+    width: 30%;
+    max-width: 30%;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 0 30px 10px rgba(90, 7, 184, 0.3);
-    background: radial-gradient(circle, rgb(245, 246, 247), transparent);
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 5% 1% rgba(90, 7, 184, 0.3);
+    background-color: #ffffff;
 }
 
 .image-container img {
     width: 100%;
-    height: auto; /* Ensures the full image is visible */
-    object-fit: contain;
+    height: auto;
+    object-fit: cover;
     border-radius: 50%;
 }
 
 /* Footer Section */
 footer {
-    text-align: center;
-    padding: 20px;
+    width: 100%;
     background-color: #09022d;
-    margin-top: 50px;
+    text-align: center;
+    padding: 3%;
+    margin-top: 5%;
 }
 
 footer p {
-    margin: 5px 0;
+    font-size: 1.5%;
+    margin: 1% 0;
 }
 
 footer a {
     text-decoration: none;
     color: #49b6fa;
+    font-size: 1.5%;
 }
 
 footer a:hover {
@@ -118,37 +149,19 @@ footer a:hover {
 .social-icons {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 2%;
 }
 
 .social-icons a {
-    margin: 0 10px;
+    margin: 0 2%;
 }
 
 .social-icons img {
-    width: 30px;
-    height: 30px;
+    width: 5%;
+    height: auto;
     transition: transform 0.3s ease;
 }
 
 .social-icons img:hover {
     transform: scale(1.2);
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .content-container {
-        flex-direction: column;
-    }
-    .text-container {
-        width: 100%;
-        text-align: center;
-    }
-    .nav-menu {
-        flex-direction: column;
-        align-items: center;
-    }
-    .nav-menu li {
-        margin-bottom: 10px;
-    }
 }
