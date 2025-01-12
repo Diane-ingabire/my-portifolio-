@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css" media="all"/>
+    <link rel="stylesheet" href="home.css" media="all"/>
     <title>Diane's Portfolio</title>
 </head>
 <body>
@@ -11,17 +11,21 @@
         <!-- Header Section -->
         <header style="position: fixed; width: 100%; background-color: #02021c; padding: 10px 0;">
             <p style="font-size: 24px; color: white; margin-left: 20px;">Portfolio</p>
-            <nav style="margin-left: 60%; display: flex; justify-content: end;">
+            <nav style="display: flex; justify-content: space-between; align-items: center;">
                 <ul class="nav-menu">
                     <li><a href="home.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="project.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <div class="hamburger-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
         </header>
-        <br/><br/><br/>
-
+        <br/><br/><br/><br/> 
         <!-- Main Body Section -->
         <section id="body">
             <div class="content-container">
@@ -74,5 +78,11 @@
             </div>
         </footer>
     </div>
+     <!-- JavaScript for Hamburger Menu -->
+     <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', () => {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
