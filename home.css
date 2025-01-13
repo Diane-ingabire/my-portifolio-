@@ -157,6 +157,7 @@ footer p {
 footer a {
     text-decoration: none;
     color: #49b6fa;
+    
 }
 
 footer a:hover {
@@ -172,4 +173,7 @@ footer .social-icons {
 footer .social-icons a img {
     width: 30px;
     height: 30px;
+}
+.social-icons img:hover {
+    transform: scale(1.2);
 }

@@ -7,19 +7,23 @@
     <link rel="stylesheet" href="about.css">
 </head>
 <body>
-    <header style="position: fixed; width: 100%; background-color: #02021c transparent; padding: 10px 0;">
+    <header style="position: fixed; width: 100%; padding: 10px 0;">
         <p style="font-size: 24px; color: white; margin-left: 20px;">Portfolio</p>
-        <nav style="margin-left: 60%; display: flex; justify-content: end;">
+        <nav style="display: flex; justify-content: space-between; align-items: center;">
             <ul class="nav-menu">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="project.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
-    <br/><br/><br/><br/>
-
+    <br/><br/><br/><br/> 
     <main>
         <section class="about-section">
             <div class="image-container">
@@ -64,5 +68,11 @@
             </a>
         </div>
     </footer>
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', () => {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

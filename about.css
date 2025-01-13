@@ -9,31 +9,25 @@ body, html {
 }
 
 /* Header */
-.header-container {
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #02021c transparent;
+    padding: 10px 0;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #100744 transparent; /* Matches the dark gradient start */
-    width: 100%;
-    position: relative; /* Not fixed to avoid covering content */
-
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.navigation-bar {
-    margin-right: 20px;
 }
 
 .nav-menu {
-    list-style: none;
+    list-style-type: none;
     display: flex;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    margin-left: 65%;
 }
 
 .nav-menu li {
@@ -48,6 +42,19 @@ body, html {
 
 .nav-menu a:hover {
     color: #49b6fa;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    background-color: white;
+    height: 3px;
+    margin: 6% 0;
+    width: 25px;
 }
 
 /* About Section */
@@ -137,4 +144,83 @@ footer a:hover {
 
 .social-icons img:hover {
     transform: scale(1.2);
+}
+
+/* Responsive Styles */
+
+/* For small screens like mobile (max-width 768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    .nav-menu {
+        margin-left: 40%;
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container {
+        width: 300px;
+        height: 300px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .content-container {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    /* Show the hamburger menu on smaller screens */
+    .hamburger-menu {
+        display: flex;
+    }
+}
+
+/* For very small screens (max-width 480px) */
+@media (max-width: 480px) {
+    .image-container {
+        width: 250px;
+        height: 250px;
+    }
+
+    .content-container {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .nav-menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav-menu a {
+        padding: 10px;
+    }
+}
+
+/* For large screens (min-width 1200px) */
+@media (min-width: 1200px) {
+    .about-section {
+        margin-top: 100px; /* Space for fixed header */
+    }
 }
